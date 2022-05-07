@@ -1,0 +1,127 @@
+.about-back {
+	margin-top: 8px;
+	height:  100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: rgba(255, 255, 255, 0.2);
+	margin-bottom: 40px;
+}
+.info {
+	margin-top: 50px;
+	font-family: 'Montserrat Bold', sans-serif;
+	font-weight: bold;
+	font-size: 1.65vh;
+	flex-basis: 55%;
+	align-self: center;
+	animation-name: info;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;	
+}
+.profileimage {
+	margin-top: 50px;
+	border: 4px solid black;
+	border-radius: 10px;
+	flex-basis: 40%;
+	max-height: 30vh;
+	max-width: 30vh;
+	animation-name: profilepicture;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	box-shadow: 0px 0px 5px black;
+	transition: all .2s;
+}
+.profileimage:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 20px black;
+}
+.about-sub {
+	margin-top: 80px;
+	text-align: center;
+	flex-basis: 100%;
+	font-size: 3vh;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 0px 0px 2px white;
+}
+.project-section {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width:  86vw;
+	border-top: 5px solid black;
+}
+.second-info {
+	flex-basis: 100%;
+	margin: auto;
+	width: 20vw;
+}
+.textlink{
+	align-self: center;
+	color: black;
+	cursor: pointer;
+	font-family: 'Montserrat Bold', sans-serif;
+	font-weight: bold;
+	font-size: 1.65vh;
+	flex-basis: 55%;
+	transition: all .2s;
+	font-size: 40px;
+}
+.project1, .project2 {
+	display: flex;
+	border-radius: 40px;
+	background: rgba(0, 0, 0, .2);
+	box-shadow: 0px 0px 5px white;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 3px solid black;
+	flex-basis: 35%;
+	margin: 20px;
+}
+.description {
+	font-family: 'Montserrat Bold', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	align-content: flex-start;
+}
+.projectimg {
+	max-height: 300px;
+	max-width: auto;
+	border: 4px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all, .2s;
+}
+.projectimg:hover {
+	transform: scale(1.08) translateY(5px);
+	box-shadow: 0px 0px 10px whitesmoke;
+}
+.textlink:hover{
+	transform: scale(1.08);
+	text-shadow: 0px 0px 5px white;
+}
+@keyframes info{
+	0%{
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+}
+
+@keyframes profilepicture {
+	0%{
+		opacity: 0;
+	}
+	80%{
+		opacity: 0;
+	}
+}
