@@ -32,6 +32,7 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	cursor: default;
+		flex-wrap: wrap;
 }
 .footnote {
 	margin: 40px;
