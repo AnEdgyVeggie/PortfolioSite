@@ -6,28 +6,26 @@
 	  font-family: 'Montserrat Bold', sans-serif;
   src:  url(//Fonts/MontserratAlternates-BoldItalic.ttf);
 }
-body {
-		overflow-x: hidden;
-    position: absolute;
-}
+
 .head {
 	display: flex;
-	background: linear-gradient(#DCDCDC, #FFFFFF);
+	background: linear-gradient(#DCDCDC, #DADCDE);
 	flex-wrap: wrap;
 	flex-basis: 100;
 	border-bottom: 5px solid black;
-	width: 100vw;
+	width: 99.5vw;
 	height: 100vh;
 	justify-content: center;
-	margin: -8px;
-
+	margin-top: -8px;
+	margin-bottom: -8px;
+	margin-left: -5px;
 }
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   align-self: center;
-	color:  #0D8FFB;
-	font-size: 10vw;
+	color:  #0073D3;
+	font-size: 15vh;
 	animation-name: title;
 	animation-timing-function: linear;
 	animation-duration: 3s;
@@ -38,7 +36,7 @@ h1 {
 }
 h2 {
 	font-family: 'Montserrat Bold', sans-serif;
-	font-size: 3vw;
+	font-size: 5vh;
 	color: #0073D3;
 	text-shadow: -1px -1px 1px navy,
 		1px 1px 1px navy,
@@ -49,8 +47,17 @@ h2 {
 	animation-duration: 6s;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
+	max-width: 80%;
 }
 
+@media screen and (max-width:  950px) {
+	h1 {
+		font-size: 7vh;
+	}
+	h2{
+		font-size: 4vh;
+	}
+}
 @keyframes title {
 	0%{
 		transform: translateX(100vw) scale(-1.6, 1.6);
