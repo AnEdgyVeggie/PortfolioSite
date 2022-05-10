@@ -24,10 +24,10 @@ const AboutMe = ({ firstName, lastName }) => {
 				CSS, bootstrap, React, node, SQL, and other foundational and evolving areas. You can view
 				some of {firstName}'s web projects below, including projects that utilize APIs and active DOM manipulation</p>
 				<div className='project'>
-					<a className='textlink' href='https://anedgyveggie.github.io/Smartbrain/'>Smartbrain</a>
+					<a className='textlink' href='https://smart-brain-edgyveggie.herokuapp.com/'>Smartbrain</a>
 					<p className='description'>A single page React application using the Clarifai API for face detection - complete with registration,
 					 sign-in, and record keeping</p>
-					<a href='https://anedgyveggie.github.io/Smartbrain/'>
+					<a href='https://smart-brain-edgyveggie.herokuapp.com/'>
 					<img alt='smartbrain' className='projectimg' src={Smartbrain} /></a>
 					<a className='githublink' href='https://github.com/AnEdgyVeggie/Smartbrain'><p>View on Github</p></a>
 				</div>
