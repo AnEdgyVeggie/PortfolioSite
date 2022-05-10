@@ -9,24 +9,46 @@ import BounceAdventure from './bounceadventure.png';
 const AboutMe = ({ firstName, lastName }) => {
 	return (
 		<div className='about-back'>
-			<p className='info'>Partly self-taught
-			with courses and certificates to back it up, {firstName} has an education focused lifestyle that
-			is centered around learning as much as he can, to be the best that he can. With experience in front and back end web development including building
-			single page applications, account services like login and
-			database registration, {firstName} has experience working with react, using node,
-			and building bug-free apps for a great user experience. <br/>Whether it's
-			bootstrap, CSS, or NPM imports such as Tachyons, {firstName} will do a great job designing for your company. </p>
+			<p className='info'>{firstName} {lastName} is a software developer who is experienced in working with web development, 
+			object oriented programming languages, as well as game development. His goal is to find employment where he 
+			can grow and refine his skills, and eventually become a senior software engineer.<br /></p>
 			<img alt='profile' className='profileimage' src={profile} />
 			<p className='about-sub'>Dedicated, hard-working and focused. That's what you're going to get
 			when you hire {firstName} {lastName}!</p>
 			<div className='webdev-section'>
-				<p className='info second-info'>{firstName}'s web development projects include working with HTML, Javascript,
-				CSS, bootstrap, React, node, SQL, and other foundational and evolving areas. You can view
-				some of {firstName}'s web projects below, including projects that utilize APIs and active DOM manipulation</p>
+				<p className='info second-info'>His experience with web development includes: </p>
+			 <div className='skills'>
+			 	<div className='list'>
+			 		<ul>
+			 			<li>Javascript</li>
+			 			<li>HTML</li>
+			 			<li>CSS</li>
+			 			<li>Building secure web applications</li>
+			 		</ul>
+			 	</div>
+			 	<div className='list'>
+			 		<ul>
+			 			<li>React</li>
+			 			<li>Express.Js</li>
+			 			<li>NPM</li>
+			 			<li>Building and implementing API’s</li>
+			 		</ul>
+			 	</div>
+			 	<div className='list'>
+			 		<ul>
+			 			<li>Node.Js</li>
+			 			<li>SQL</li>
+			 			<li>PostgreSQL</li>
+			 			<li>Deploying applications on Heroku</li>
+			 		</ul>
+			 	</div>
+			 </div>
+			 	<p className='info second-info'>Below you will see projects hosted on Github, as well as Heroku, which include 
+			 front and back end development. They are responsive, and scalable.</p>
 				<div className='project'>
 					<a className='textlink' href='https://smart-brain-edgyveggie.herokuapp.com/'>Smartbrain</a>
 					<p className='description'>A single page React application using the Clarifai API for face detection - complete with registration,
-					 sign-in, and record keeping</p>
+					 sign-in, and database utilization</p>
 					<a href='https://smart-brain-edgyveggie.herokuapp.com/'>
 					<img alt='smartbrain' className='projectimg' src={Smartbrain} /></a>
 					<a className='githublink' href='https://github.com/AnEdgyVeggie/Smartbrain'><p>View on Github</p></a>
@@ -43,10 +65,38 @@ const AboutMe = ({ firstName, lastName }) => {
 			<div className='divider'>
 					<p className='about-sub'>{firstName} is determined, dependable, and other 'd' words that mean good things, too!</p>
 				<div className='unity-section'>
-					<p className='info second-info'>{firstName}'s Object Oriented programming background primarily includes Javascript, C# and C++
-					with a focus on game development. {firstName} has experience using Unreal Engine 4 but more regularly uses Unity. {firstName} has
-					a course certificate for both C++ and C# fundamentals and certificates for programming on the Unity engine, but his interest didn't
-					stop there. He has designed games in the style of top-down shooters, platformers, and games for his young kids to learn basic computer skills</p>
+					<p className='info second-info'>{firstName}’s experience with game development is primarily focused around the Unity engine 
+					and C#, but {firstName} has experience also with C++ and Unreal Engine 4. {firstName} has created a few games on his own, 
+					which include a 2.5D side-scroller and top-down horde shooter, but has also built projects to teach his young children 
+					basic computer skills. Game building is a passion for {firstName}, and learning is a lifestyle.</p>
+					<div className='skills'>
+				 	<div className='list'>
+				 		<ul>
+				 			<li>C#</li>
+				 			<li>Unity Engine Libraries</li>
+				 			<li>Utilizing AI for movement</li>
+				 			<li>Using Charts to organize script flow</li>
+				 		</ul>
+				 	</div>
+				 	<div className='list'>
+				 		<ul>
+				 			<li>Class inheritance</li>
+				 			<li>Interfaces</li>
+				 			<li>Effective use of preprocessors</li>
+				 			<li>Creating UI</li>
+				 		</ul>
+				 	</div>
+				 	<div className='list'>
+				 		<ul>
+				 			<li>Package Manager</li>
+				 			<li>Cinemachine</li>
+				 			<li>Unity Asset Store</li>
+				 			<li>Post-Processing Effects</li>
+				 		</ul>
+				 	</div>
+				 </div>
+				 <p className='info second-info'>Below you will see projects available on Github, as well as links to demo videos
+				 for each game. Both games were built on the Unity engine.</p>
 					<div className='project'>
 						<a className='textlink' href='https://www.youtube.com/watch?v=xJTfGKKMmYM&t=91s'>BoxShooter</a>
 						<p className='description'>A top-down horde survival shooter. Survive zombie waves, buy new guns, and see how long you can last in this polygon world.
@@ -63,6 +113,7 @@ const AboutMe = ({ firstName, lastName }) => {
 						<a className='githublink' href='https://github.com/AnEdgyVeggie/BounceAdventure'><p>View on Github</p></a>
 					</div>
 				</div>
+				<p className='contact-info'>Contact {firstName} today!<br/>Ethan.Sylvester@gmx.com<br/>226-886-1836<br />Brigden, Ontario</p>
 			</div>		
 		</div>
 	)
