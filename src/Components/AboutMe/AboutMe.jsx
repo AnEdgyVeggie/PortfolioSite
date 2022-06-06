@@ -30,13 +30,13 @@ const AboutMe = ({ firstName, lastName }) => {
 			 		<ul>
 			 			<li>React</li>
 			 			<li>Express.Js</li>
-			 			<li>NPM</li>
+			 			<li>AJAX</li>
 			 			<li>Building and implementing API’s</li>
 			 		</ul>
 			 	</div>
 			 	<div className='list'>
 			 		<ul>
-			 			<li>Node.Js</li>
+			 			<li>Node.Js and NPM</li>
 			 			<li>SQL</li>
 			 			<li>PostgreSQL</li>
 			 			<li>Deploying applications on Heroku</li>
