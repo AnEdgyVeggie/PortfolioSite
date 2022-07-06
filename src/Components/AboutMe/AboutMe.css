@@ -62,11 +62,15 @@
 .skills {
 	display: flex;
 	flex-basis: 100%;
-	justify-content: center;
+	justify-content: flex-start;
 
 }
 .list {
 	font-family: 'Montserrat Alternates', sans-serif;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -145,7 +149,6 @@
 }
 .unity-section{
 	margin-top: 40px;
-	height: ;
 	margin-bottom: 50px;
 }
 .contact-info {
@@ -185,4 +188,21 @@
 	80%{
 		opacity: 0;
 	}
+}
+
+.project-info {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 80%;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 640px) {
+	p {
+		font-size: 16px;
+		margin-left: -22px;
+	}
+
 }

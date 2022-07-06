@@ -20,26 +20,29 @@ const AboutMe = ({ firstName, lastName }) => {
 			 <div className='skills'>
 			 	<div className='list'>
 			 		<ul>
-			 			<li>Javascript</li>
-			 			<li>HTML</li>
-			 			<li>CSS</li>
-			 			<li>Building secure web applications</li>
+			 			<p>Javascript</p>
+			 			<p>HTML</p>
+			 			<p>CSS</p>
+			 			<p>Building secure web applications</p>
+						<p>JSON</p>
 			 		</ul>
 			 	</div>
 			 	<div className='list'>
 			 		<ul>
-			 			<li>React</li>
-			 			<li>Express.Js</li>
-			 			<li>AJAX</li>
-			 			<li>Building and implementing API’s</li>
+			 			<p>React with hooks</p>
+						<p>Redux </p>
+			 			<p>Express.Js</p>
+			 			<p>AJAX</p>
+			 			<p>Building and implementing API’s</p>
 			 		</ul>
 			 	</div>
 			 	<div className='list'>
 			 		<ul>
-			 			<li>Node.Js and NPM</li>
-			 			<li>SQL</li>
-			 			<li>PostgreSQL</li>
-			 			<li>Deploying applications on Heroku</li>
+						<p>Webpack and parcel</p>
+			 			<p>Node.Js and NPM</p>
+			 			<p>SQL, Firebase and AWS</p>
+			 			<p>PostgreSQL and MongoDB</p>
+			 			<p>Deployment on Heroku, AWS and Firebase</p>
 			 		</ul>
 			 	</div>
 			 </div>
@@ -47,18 +50,22 @@ const AboutMe = ({ firstName, lastName }) => {
 			 front and back end development. They are responsive, and scalable.</p>
 				<div className='project'>
 					<a className='textlink' href='https://smart-brain-edgyveggie.herokuapp.com/'>Smartbrain</a>
-					<p className='description'>A single page React application using the Clarifai API for face detection - complete with registration,
-					 sign-in, and database utilization</p>
-					<a href='https://smart-brain-edgyveggie.herokuapp.com/'>
-					<img alt='smartbrain' className='projectimg' src={Smartbrain} /></a>
+					<div className='project-info'>
+						<p className='description'>A single page React application using the Clarifai API for face detection - complete with registration,
+						sign-in, and database utilization</p>
+						<a href='https://smart-brain-edgyveggie.herokuapp.com/'>
+						<img alt='smartbrain' className='projectimg' src={Smartbrain} /></a>	
+					</div>
 					<a className='githublink' href='https://github.com/AnEdgyVeggie/Smartbrain'><p>View on Github</p></a>
 				</div>
 				<div className='project'>
-					<a className='textlink' href='https://anedgyveggie.github.io/RoboFriendsReactProject/'>Robofriends</a>
-					<p className='description'>A single page React application which uses React for DOM manipulation. Search through a list of 
-					friends and update the DOM to display friends who correspond with the search results</p>
-					<a href='https://anedgyveggie.github.io/RoboFriendsReactProject/'>
-					<img alt='robofriends' className='projectimg' src={Robofriends} /></a>
+					<a className='textlink' href='https://anedgyveggie.github.io/RobofriendsReactApp/'>Robofriends</a>
+					<div className='project-info'>
+						<p className='description'>A single page React application which uses React for DOM manipulation. Search through a list of 
+						friends and update the DOM to display friends who correspond with the search results</p>
+						<a href='https://anedgyveggie.github.io/RoboFriendsReactProject/'>
+						<img alt='robofriends' className='projectimg' src={Robofriends} /></a>
+					</div>
 					<a className='githublink' href='https://github.com/AnEdgyVeggie/RoboFriendsReactProject'><p>View on Github</p></a>
 				</div>
 			</div>
@@ -72,26 +79,26 @@ const AboutMe = ({ firstName, lastName }) => {
 					<div className='skills'>
 				 	<div className='list'>
 				 		<ul>
-				 			<li>C#</li>
-				 			<li>Unity Engine Libraries</li>
-				 			<li>Utilizing AI for movement</li>
-				 			<li>Using Charts to organize script flow</li>
+				 			<p>C#</p>
+				 			<p>Unity Engine Libraries</p>
+				 			<p>Utilizing AI for movement</p>
+				 			<p>Using Charts to organize script flow</p>
 				 		</ul>
 				 	</div>
 				 	<div className='list'>
 				 		<ul>
-				 			<li>Class inheritance</li>
-				 			<li>Interfaces</li>
-				 			<li>Effective use of preprocessors</li>
-				 			<li>Creating UI</li>
+				 			<p>Class inheritance</p>
+				 			<p>Interfaces</p>
+				 			<p>Effective use of preprocessors</p>
+				 			<p>Creating UI</p>
 				 		</ul>
 				 	</div>
 				 	<div className='list'>
 				 		<ul>
-				 			<li>Package Manager</li>
-				 			<li>Cinemachine</li>
-				 			<li>Unity Asset Store</li>
-				 			<li>Post-Processing Effects</li>
+				 			<p>Package Manager</p>
+				 			<p>Cinemachine</p>
+				 			<p>Unity Asset Store</p>
+				 			<p>Post-Processing Effects</p>
 				 		</ul>
 				 	</div>
 				 </div>
@@ -99,18 +106,22 @@ const AboutMe = ({ firstName, lastName }) => {
 				 for each game. Both games were built on the Unity engine.</p>
 					<div className='project'>
 						<a className='textlink' href='https://www.youtube.com/watch?v=xJTfGKKMmYM&t=91s'>BoxShooter</a>
-						<p className='description'>A top-down horde survival shooter. Survive zombie waves, buy new guns, and see how long you can last in this polygon world.
-						BoxShooter was designed using the Unity engine and has been produced entirely by one person</p>
-						<a href='https://www.youtube.com/watch?v=xJTfGKKMmYM&t=91s'>
-						<img alt='BoxShooter' className='projectimg' src={BoxShooter} /></a>
+						<div className='project-info'>
+							<p className='description'>A top-down horde survival shooter. Survive zombie waves, buy new guns, and see how long you can last in this polygon world.
+							BoxShooter was designed using the Unity engine and has been produced entirely by one person</p>
+							<a href='https://www.youtube.com/watch?v=xJTfGKKMmYM&t=91s'>
+							<img alt='BoxShooter' className='projectimg' src={BoxShooter} /></a>
+						</div>
 						<a className='githublink' href='https://github.com/AnEdgyVeggie/BoxShooter'><p>View on Github</p></a>
 					</div>
 					<div className='project'>
-						<a className='textlink' href='https://youtu.be/GyfM_i6fDqA'>BounceAdventure</a>
+					<a className='textlink' href='https://youtu.be/GyfM_i6fDqA'>BounceAdventure</a>
+					<div className='project-info'>
 						<p className='description'>A simple platformer where you play a bouncy little adventurer. Time those jumps correctly, or fall to your doom!</p>
 						<a href='https://youtu.be/GyfM_i6fDqA'>
-						<img alt='bounceadventure' className='projectimg' src={BounceAdventure} /></a>
-						<a className='githublink' href='https://github.com/AnEdgyVeggie/BounceAdventure'><p>View on Github</p></a>
+						<img alt='bounceadventure' className='projectimg' src={BounceAdventure} /></a>		
+					</div>
+					<a className='githublink' href='https://github.com/AnEdgyVeggie/BounceAdventure'><p>View on Github</p></a>
 					</div>
 				</div>
 				<p className='contact-info'>Contact {firstName} today!<br/>Ethan.Sylvester@gmx.com<br/>226-886-1836<br />Brigden, Ontario</p>
